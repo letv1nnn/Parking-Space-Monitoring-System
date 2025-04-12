@@ -2,6 +2,8 @@
 
 This is a project where I'm building an interpreter, virtual machine, compiler, and possibly more low-level components from scratch. It's essentially an extended version of the Per Vognsen's course problems.
 BITWISE playlist: https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX
+Usefull books:
+- Wirth's Compiler Construction (https://www.inf.ethz.ch/personal/wirth/CompilerConstruction)
 
 ## April 4 - April 12:
 I've created structured small versions of all, interpreter, compiler and virtual machine.
