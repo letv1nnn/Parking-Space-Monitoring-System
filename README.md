@@ -5,4 +5,5 @@ Basically, it's a BITWISE course problems, but much more extended.
 BITWISE playlist: https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX
 
 # April 4 - April 12:
+I've created structured small versions of all, interpreter, compiler and virtual machine.
 
