@@ -14,5 +14,7 @@ CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machin
 4. INTERPRETER
 5. VIRTUAL MACHINE AND COMPILER
 
-## April 5 - ...(Present)
+## Day off - Creating MALLOC, FREE and GC
+
+## April 14 - ...(Present)
 I am extending each of the interpreter, virtual machine, and compiler with various features, etc...
