@@ -5,7 +5,7 @@ BITWISE playlist: https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-Ci
 ### Usefull books:
 - Wirth's Compiler Construction (https://www.inf.ethz.ch/personal/wirth/CompilerConstruction)
 
-## April 4 - April 12:
+## April 4 - April 12 - small versions of all, interpreter, compiler and virtual machine.
 CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/interp_vm_compiler.c
 I've created structured small versions of all, interpreter, compiler and virtual machine.
 1. Created a buffer with "custom memory allocators":).
