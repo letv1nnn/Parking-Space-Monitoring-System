@@ -6,7 +6,8 @@ Sources for studying:
 - C programming language: https://www.youtube.com/watch?v=7YhRFx-oyW4&list=PL3BR09unfgchRxdDws74aY4mlSk9eYGEs (MIPT university) (rus)
 - C and ASM: https://www.youtube.com/playlist?list=PLdW86-ZDBvbUrgXfGyETuC3qU3TrEHaP5 (HSE university) (rus)
 ### Usefull books:
-- Wirth's Compiler Construction (https://www.inf.ethz.ch/personal/wirth/CompilerConstruction)
+- Wirth's Compiler Construction (https://www.inf.ethz.ch/personal/wirth/CompilerConstruction) (eng)
+- Expert C Programming (https://progforperf.github.io/Expert_C_Programming.pdf) (eng)
 
 ## April 4 - April 12 - small versions of all, interpreter, compiler and virtual machine.
 CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/interp_vm_compiler.c
