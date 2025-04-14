@@ -14,7 +14,7 @@ I've created structured small versions of all, interpreter, compiler and virtual
 4. INTERPRETER
 5. VIRTUAL MACHINE AND COMPILER
 
-## April 13 - (Present) - Creating MALLOC, FREE and GC
+## April 13 - April 14 - Creating MALLOC, FREE and GC
 CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./tree/main/memory_allocation
 I've made a simple version of a memory allocator to understand how it works. 
 Furthermore, I've created a real memory allocator using specific libraries.
