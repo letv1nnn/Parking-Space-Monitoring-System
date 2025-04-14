@@ -10,7 +10,7 @@ This is a project where I'm building an interpreter, virtual machine, compiler, 
 - Expert C Programming (https://progforperf.github.io/Expert_C_Programming.pdf) (eng)
 
 ## April 4 - April 12 - small versions of all, interpreter, compiler and virtual machine.
-CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/interp_vm_compiler.c
+CODE ---> (https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/IVC/interp_vm_compiler.c)
 I've created structured small versions of all, interpreter, compiler and virtual machine.
 
 ## April 13 - April 14 - Creating MALLOC, FREE and GC
