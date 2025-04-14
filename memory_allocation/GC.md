@@ -2,6 +2,7 @@
 
 This project showcases a minimal implementation of a **Mark-and-Sweep Garbage Collector** written in C. 
 It simulates a memory management system that can identify and clean up unreachable memory chunks, helping to prevent memory leaks in applications that manage dynamic memory.
+**Code** --> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/memory_allocation/gc.c
 
 ## Concept Overview
 
