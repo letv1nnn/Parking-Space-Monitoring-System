@@ -3,8 +3,8 @@
 This is a project where I'm building an interpreter, virtual machine, compiler, and possibly more low-level components from scratch. It's essentially an extended version of the Per Vognsen's course problems.
 Sources for studying:
 - BITWISE playlist: https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX (eng)
-- https://www.youtube.com/watch?v=7YhRFx-oyW4&list=PL3BR09unfgchRxdDws74aY4mlSk9eYGEs (MIPT university) (rus)
-- https://www.youtube.com/playlist?list=PLdW86-ZDBvbUrgXfGyETuC3qU3TrEHaP5 (HSE university) (rus)
+- C programming language: https://www.youtube.com/watch?v=7YhRFx-oyW4&list=PL3BR09unfgchRxdDws74aY4mlSk9eYGEs (MIPT university) (rus)
+- C and ASM: https://www.youtube.com/playlist?list=PLdW86-ZDBvbUrgXfGyETuC3qU3TrEHaP5 (HSE university) (rus)
 ### Usefull books:
 - Wirth's Compiler Construction (https://www.inf.ethz.ch/personal/wirth/CompilerConstruction)
 
