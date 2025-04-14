@@ -12,11 +12,6 @@ This is a project where I'm building an interpreter, virtual machine, compiler, 
 ## April 4 - April 12 - small versions of all, interpreter, compiler and virtual machine.
 CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./blob/main/interp_vm_compiler.c
 I've created structured small versions of all, interpreter, compiler and virtual machine.
-1. Created a buffer with "custom memory allocators":).
-2. Implement String interning, optimization technique used to save memory and improve performance when working with strings.
-3. Created parser, lexer. For lexer I used Abstract Syntax Tree.
-4. INTERPRETER
-5. VIRTUAL MACHINE AND COMPILER
 
 ## April 13 - April 14 - Creating MALLOC, FREE and GC
 CODE ---> https://github.com/letv1nnn/Creating-my-own-interpreter-virtual-machine-and-compiler./tree/main/memory_allocation
