@@ -1,4 +1,4 @@
-# Creating-my-own-interpreter-virtual-machine-and-compiler.
+# Creating-my-own-interpreter-and-compiler.
 
 This is a project where I'm building an interpreter, virtual machine, compiler, and possibly more low-level components from scratch. It's essentially an extended version of the Per Vognsen's course problems.
 ### Sources for studying:
