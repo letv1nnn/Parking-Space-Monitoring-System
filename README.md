@@ -2,6 +2,7 @@
 
 ## Description
 This project is a basic face detection system using OpenCV's Haar cascade classifiers. It detects faces and eyes from a video file and displays them with annotations.
+NOTE: Review the code in the main file, there are several placeholders for the files and dependencies.
 
 ---
 
