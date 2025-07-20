@@ -31,5 +31,9 @@ You can download these from the official [OpenCV GitHub](https://github.com/open
 
 ### Using g++ (Linux/Mac):
 ```bash
-g++ face_detection.cpp -o face_detection `pkg-config --cflags --libs opencv4`
-./face_detection
+make
+./prog
+```
+```bash
+make clean # to remove the executable file
+```
