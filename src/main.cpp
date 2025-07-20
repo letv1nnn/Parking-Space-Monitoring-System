@@ -10,7 +10,22 @@ using namespace cv;
 int main(int argc, char **argv) {
     std::cout << "Running the program...d\n";
 
-    VideoCapture video(0);
+    VideoCapture video;
+
+    if (argc == 1) {
+        video.open(0);
+    } else if (argc == 2) {
+        video.open(argv[1]); // if user add the video file in the param list
+    } else {
+        std::cerr << "Too many arguments!\n";
+        return -1;
+    }
+
+    if (!video.isOpened()) {
+        std::cerr << "Could not open video source!\n";
+        return -1;
+    }
+
     CascadeClassifier facedetect;
     Mat img;
     facedetect.load("/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml");
@@ -28,7 +43,10 @@ int main(int argc, char **argv) {
         }
 
         imshow("Frame", img);
-        waitKey(1);
+        if (waitKey(1) == 'q') {
+            std::cout << "Exiting the program...\n";
+            break;
+        }
     }
 
     return 0;
