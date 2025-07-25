@@ -1,4 +1,4 @@
-# OpenCV with C++
+# Computer Vision with C++
 
 This repository contains notes and C++ projects related to the OpenCV (Open Source Computer Vision) library. It serves as a personal reference and learning resource for understanding and applying various computer vision techniques using OpenCV.
 
