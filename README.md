@@ -1,37 +1,19 @@
-# Face Recognition System
+# OpenCV with C++
 
-## Description
-This project is a basic face detection system using OpenCV's Haar cascade classifiers. It detects faces from a video file and displays them with annotations.
-NOTE: Review the code in the main file, there are several placeholders for the files and dependencies.
+This repository contains notes and C++ projects related to the OpenCV (Open Source Computer Vision) library. It serves as a personal reference and learning resource for understanding and applying various computer vision techniques using OpenCV.
 
 ---
 
-## Features
+## About OpenCV
 
-- Detects **frontal cat faces** (can be swapped with human face classifiers).
-- Reads video input from a file.
-- Draws circles or rectangles around detected faces.
+OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning software library. It provides a wide range of tools for image and video analysis, including features like object detection, face recognition, image filtering, and much more.
 
----
-
-## Requirements
-
-- C++ Compiler (e.g., `g++`, MSVC)
-- OpenCV (version 4.x or later)
-- Haar Cascade XML files:
-  - `haarcascade_frontalface_default.xml`
-
-You can download these from the official [OpenCV GitHub](https://github.com/opencv/opencv/tree/master/data/haarcascades).
+Official website: [https://opencv.org/](https://opencv.org/)
 
 ---
 
-## How to Build and Run
+### Prerequisites
 
-### Using g++ (Linux/Mac):
-```bash
-make
-./prog
-```
-```bash
-make clean # to remove the executable file
-```
+- C++ Compiler with C++11 (or newer) support
+- [CMake](https://cmake.org/)
+- OpenCV installed (version 4.x recommended)
