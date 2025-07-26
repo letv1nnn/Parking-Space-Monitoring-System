@@ -1,3 +1,0 @@
-/home/letv1n/CLionProjects/Document-Scanner/build/CMakeFiles/DocumentScanner.dir
-/home/letv1n/CLionProjects/Document-Scanner/build/CMakeFiles/edit_cache.dir
-/home/letv1n/CLionProjects/Document-Scanner/build/CMakeFiles/rebuild_cache.dir
