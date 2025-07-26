@@ -43,4 +43,7 @@ rm -rf build
 - The build process copies the `test` folder into the build directory after compilation for ease of access.
 - Press any key (except 'q') to close the OpenCV window. Press 'q' to quit from the terminal after viewing the image.
 
+## Example
+<img width="1920" height="990" alt="Screenshot from 2025-07-26 17-45-17" src="https://github.com/user-attachments/assets/510873fb-449a-468a-af04-d189643d7394" />
+
 
