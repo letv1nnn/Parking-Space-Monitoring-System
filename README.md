@@ -26,4 +26,4 @@ Primarily, user need to choose what he is going to use, video or real time camer
 
 ## Examples
 Initially, I've created a program that detect free spots from the given immage, not from capturing a video.
-file:///home/letv1n/Pictures/Screenshots/Screenshot%20from%202025-07-30%2019-14-20.png
+![Image Parking Slot Detection](file:///home/letv1n/Pictures/Screenshots/Screenshot%20from%202025-07-30%2019-14-20.png)
