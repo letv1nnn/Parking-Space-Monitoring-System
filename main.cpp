@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
     std::string path;
 
     if (argc == 1) {
-        path = "test/parking_lots_video_1.mp4";
+        path = "test/parking_lots_2.jpg";
         std::cout << "Using default path: " << path << '\n';
     } else if (argc == 2) {
         path = argv[1];
@@ -21,39 +21,41 @@ int main(int argc, char **argv) {
         std::cout << "Too many arguments!\n";
     }
 
-    VideoCapture video(path);
-    if (!video.isOpened()) {
-        std::cerr << "Failed to load video!\n";
+    const Mat frame = imread(path);
+    if (frame.empty()) {
+        std::cerr << "Failed to load image!\n";
         return -1;
     }
 
-    Mat frame;
+    const Mat lotsFrame = frame.clone();
+    // you can replace the line above with the line below to look at the parking lots configured by preprocessing function
+    // const Mat lotsFrame = parkingLotLinesDetection(frame);
+    baseImage = lotsFrame.clone();
+    Mat displayFrame = lotsFrame.clone();
 
-    while (true) {
-        video.read(frame);
+    int freeParkingLots = checkLots(displayFrame);
+    std::cout << freeParkingLots << '\n';
 
-        const Mat lotsFrame = frame.clone();
-        // you can replace the line above with the line below to look at the parking lots configured by preprocessing function
-        // const Mat lotsFrame = parkingLotLinesDetection(frame);
-        baseImage = lotsFrame.clone();
-        Mat displayFrame = lotsFrame.clone();
+#if 0 // part from debug.cpp file.
+    namedWindow("Parking Lots Detection Frame", WINDOW_AUTOSIZE);
+    setMouseCallback("Parking Lots Detection Frame", spawningParkingLot, &displayFrame);
 
-        int freeParkingLots = checkLots(displayFrame);
-        std::cout << freeParkingLots << '\n';
+    putText(displayFrame, std::format("Free Slots: {}", freeParkingLots), Point(50, 20), FONT_HERSHEY_COMPLEX_SMALL, 1, Scalar(0, 40, 0), 2);
+    imshow("Parking Lots Detection Frame", displayFrame);
+#endif
 
-        Mat displayWithFooter(displayFrame.rows + EXTRA_HEIGHT, displayFrame.cols, displayFrame.type(), Scalar(0, 0, 0));
+    cv::Mat displayWithFooter(displayFrame.rows + EXTRA_HEIGHT, displayFrame.cols, displayFrame.type(), Scalar(0, 0, 0));
 
-        displayFrame.copyTo(displayWithFooter(cv::Rect(0, 0, displayFrame.cols, displayFrame.rows)));
+    displayFrame.copyTo(displayWithFooter(cv::Rect(0, 0, displayFrame.cols, displayFrame.rows)));
 
-        std::string text = std::format("Free Car Parking Slots: {}", freeParkingLots);
-        putText(displayWithFooter, text, Point(20, displayFrame.rows + 35), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 255, 255), 2);
+    std::string text = std::format("Free Car Parking Slots: {}", freeParkingLots);
+    cv::putText(displayWithFooter, text, Point(20, displayFrame.rows + 35), FONT_HERSHEY_SIMPLEX, 1, Scalar(255, 255, 255), 2);
 
-        imshow("Parking Lots Detection Frame", displayWithFooter);
+    cv::imshow("Parking Lots Detection Frame", displayWithFooter);
 
-        if (waitKey(0) == 'q') {
-            std::cout << "Quitting...\n";
-            return 0;
-        }
+    if (waitKey(0) == 'q') {
+        std::cout << "Quitting...\n";
+        return 0;
     }
 
     return 0;
@@ -127,4 +129,3 @@ Mat preprocessingFrame(const Mat& frame) {
 
     return preprocessedFrame;
 }
-
