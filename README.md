@@ -1,4 +1,4 @@
-# Free Parking Slot Detection System
+# Parking Space Monitoring System
 
 This C++ project uses OpenCV to automatically detect free parking slots from a static camera feed or video footage. It highlights occupied and free parking spaces with colored rectangles and displays the number of available slots on screen.
 
@@ -29,8 +29,8 @@ This C++ project uses OpenCV to automatically detect free parking slots from a s
 
 ## Clonning
 ```bash
-git clone https://github.com/letv1nnn/Free-Parking-Slot-Detector.git
-cd Free-Parking-Slot-Detector
+git clone https://github.com/letv1nnn/Parking-Space-Monitoring-System.git
+cd Parking-Space-Monitoring-System
 ```
 
 ## Building
