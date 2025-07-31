@@ -26,4 +26,10 @@ Primarily, user need to choose what he is going to use, video or real time camer
 
 ## Examples
 Initially, I've created a program that detect free spots from the given immage, not from capturing a video.
+---
+### Free spots detection from image
 <img width="1920" height="1080" alt="Screenshot from 2025-07-30 19-14-20" src="https://github.com/user-attachments/assets/7a615b45-fd34-4db6-8aec-a25bde2914fb" />
+
+### Detection from video/camera
+<img width="1920" height="1080" alt="Screenshot from 2025-07-31 17-09-06" src="https://github.com/user-attachments/assets/7eca30ca-1bcb-408d-ade3-e0d2ad0744ab" />
+
