@@ -46,7 +46,7 @@ cd ..
 
 ## Examples
 
-Initially, I've created a program that detect free spots from the given immage, not from capturing a video.
+Initially, I've created a program that detects free spots from a given immage, not from capturing a video.
 
 ---
 ### Free spots detection from image
