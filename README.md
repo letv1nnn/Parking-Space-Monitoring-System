@@ -1,14 +1,21 @@
 # Free Parking Slot Detection
 
-This C++ program uses OpenCV to automatically detect **free parking spots** from a static camera feed or video footage. It highlights occupied and free slots with colored rectangles and displays the count of available spaces on screen.
+This C++ project uses OpenCV to automatically detect free parking slots from a static camera feed or video footage. It highlights occupied and free parking spaces with colored rectangles and displays the number of available slots on screen.
 
 ---
 
 ## How It Works
-Primarily, user need to choose what he is going to use, video or real time camera. After that, user need to calibrate the parking lots, and that basically is the and of configuration.
+1. **Input Source Selection**  
+   The user can choose between using a video file or a real-time camera stream as the input source.
 
-### **Stages**:
-...
+2. **One-Time Calibration**  
+   During calibration mode, the user manually marks the top-left corner of each parking slot by clicking on the video feed. These coordinates are saved to a `points.txt` file for future sessions. Calibration is only required once.
+
+3. **Slot Detection Process**  
+   After loading the saved slot positions:
+   - The program extracts each parking region as a rectangular ROI.
+   - It applies a preprocessing pipeline: grayscale conversion, Gaussian blur, and Canny edge detection.
+   - The system calculates the white pixel ratio of each preprocessed ROI and compares it to a predefined threshold to determine whether a spot is free or occupied.
 
 ---
 
@@ -20,9 +27,20 @@ Primarily, user need to choose what he is going to use, video or real time camer
 
 ---
 
-## Building
-...
+## Clonning
+git clone https://github.com/letv1nnn/Free-Parking-Slot-Detector.git
+cd Free-Parking-Slot-Detector
 
+## Building
+```bash
+mkdir build
+cd build
+cmake ..
+make
+cd ..
+```
+
+---
 
 ## Examples
 
