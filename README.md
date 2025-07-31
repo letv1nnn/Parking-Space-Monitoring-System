@@ -28,8 +28,10 @@ This C++ project uses OpenCV to automatically detect free parking slots from a s
 ---
 
 ## Clonning
+```bash
 git clone https://github.com/letv1nnn/Free-Parking-Slot-Detector.git
 cd Free-Parking-Slot-Detector
+```
 
 ## Building
 ```bash
