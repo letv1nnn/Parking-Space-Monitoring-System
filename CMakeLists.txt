@@ -7,12 +7,7 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(FreeParkingSlotDetection main.cpp
-        common.h
-        pointsStorage.cpp
-        calibration.cpp
-        freeSpaceDetection.cpp
-)
+add_executable(FreeParkingSlotDetection main.cpp common.h pointsStorage.cpp calibration.cpp freeSpaceDetection.cpp)
 
 target_link_libraries(FreeParkingSlotDetection ${OpenCV_LIBS})
 
